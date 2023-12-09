@@ -37,6 +37,25 @@ def test_mid() -> None:
         mid([1, 2, 3])
 
 
+@pytest.mark.parametrize("input_string, output",
+                         [("123", "2"),
+                          ("Hello", "l"),
+                          ("hi", ""),
+                          ("This is Srushanth", "S"),
+                          ("", "")])
+def test_mid(input_string: str, output: str) -> None:
+    """
+    This is the test created to test "mid" function.
+    """
+    assert mid(input_string) == output
+
+    # Test with non-string inputs
+    with pytest.raises(TypeError):
+        mid(123)
+        mid(None)
+        mid([1, 2, 3])
+
+
 # Run the tests with pytest
 if __name__ == "__main__":
     pytest.main()
