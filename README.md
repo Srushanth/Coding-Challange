@@ -55,7 +55,7 @@ status = {
 
 - **Function**: [online_count](./src/challenges.py)
 - **Description**: Counts the number of individuals who are online.
-- **Status**: In Progress
+- **Status**: Completed
 - **Test**: [online_count](./tests/test_challenges.py)
 
 ___
