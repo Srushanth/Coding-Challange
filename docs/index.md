@@ -1,8 +1,25 @@
+# Welcome to MkDocs
+
+For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+
+## Commands
+
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs -h` - Print help message and exit.
+
+## Project layout
+
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
+
+
 # Coding Challenges
 
 This repository contains my solutions to various coding challenges.
-
-[Refer this link for mkdocs](https://www.youtube.com/watch?v=Q-YA_dA8C20&t=312s)
 
 ## Structure
 
@@ -20,10 +37,7 @@ Tests for these functions are written using pytest and are located in the `./tes
 
 #### Solution: 
 
-- **Function**: [get_capital_indexes](./src/challenges.py)
-- **Description**: This function returns the indices of all the uppercase letters in a string.
-- **Status**: Completed
-- **Test**: [test_get_capital_indexes](./tests/test_challenges.py)
+
 
 >### Challenge 2
 
@@ -33,10 +47,7 @@ Tests for these functions are written using pytest and are located in the `./tes
 
 #### Solution: 
 
-- **Function**: [mid](./src/challenges.py)
-- **Description**: This function returns the middle character of a given string. If the middle character is not found, an empty string is returned.
-- **Status**: Completed
-- **Test**: [mid](./tests/test_challenges.py)
+
 
 >### Challenge 3
 
@@ -55,10 +66,7 @@ status = {
 
 #### Solution: 
 
-- **Function**: [online_count](./src/challenges.py)
-- **Description**: Counts the number of individuals who are online.
-- **Status**: Completed
-- **Test**: [online_count](./tests/test_challenges.py)
+
 
 >### Challenge 4
 
@@ -70,10 +78,7 @@ status = {
 
 #### Solution: 
 
-- **Function**: [random_number](./src/challenges.py)
-- **Description**: This function will return a random number between 0 and 101.
-- **Status**: Completed
-- **Test**: [test_random_number](./tests/test_challenges.py)
+
 
 ___
 <!-- Add more challenges in the same way -->
@@ -83,5 +88,4 @@ ___
 To run the tests, navigate to the root directory of the project and run the following command:
 
 ```bash
-pytest ./tests/test_challenges.py
 ```
