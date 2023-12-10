@@ -45,3 +45,14 @@ def online_count(status: dict) -> int:
         raise TypeError("Input must be a dictionary.")
 
     return list(status.values()).count("online")
+
+
+def random_number() -> int:
+    """
+    This function will return a random number between 0 and 101.
+
+    Returns:
+        int: Random number between 0 and 101.
+    """
+    import time
+    return int(time.time() * 1000) % 100 + 1

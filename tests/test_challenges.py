@@ -2,6 +2,7 @@ import pytest
 from src.challenges import get_capital_indexes
 from src.challenges import mid
 from src.challenges import online_count
+from src.challenges import random_number
 
 
 def test_get_capital_indexes() -> None:
@@ -85,6 +86,19 @@ def test_online_count(input_dict: dict, output: int):
         online_count(123)  # type: ignore
         online_count(None)  # type: ignore
         online_count([1, 2, 3])  # type: ignore
+
+
+@pytest.mark.parametrize("input_int", range(10))
+def test_random_number(input_int: int) -> None:
+    """
+    This is the test created to test "random_number" function.
+
+    Args:
+        input_int (int): Random number.
+    """
+    number = random_number()
+    assert isinstance(number, int)
+    assert number in list(range(1, 101))
 
 
 # Run the tests with pytest
